@@ -1,7 +1,8 @@
 package ir.studentloanpaymentsystem.jpa.domin.enumeration;
 
 public enum UniversityType {
-    DolatiUniversity,
+    DolatiDayUniversity,
+    DolatiNightUniversity,
     AzadUniversity,
     NonProfitUniversity,
     Pardis,
