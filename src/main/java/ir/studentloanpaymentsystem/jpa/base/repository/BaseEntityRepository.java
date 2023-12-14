@@ -10,6 +10,8 @@ public interface BaseEntityRepository<ID extends Serializable,T extends BaseEnti
 
     T save(T entity);
 
+    public T update(T entity, ID id);
+
     void deleteById(ID id);
 
     Collection<T> findAll();
