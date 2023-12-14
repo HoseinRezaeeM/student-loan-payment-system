@@ -27,6 +27,15 @@ public abstract class BaseEntityRepositoryImpl<ID extends Serializable, T extend
         commitTransaction();
         return entity;
     }
+    @Override
+    public T update(T entity, ID id) {
+        beginTransaction();
+        entity.setId(id);
+        T merge = entityManager.merge(entity);
+        commitTransaction();
+        entityManager.clear();
+        return merge;
+    }
 
     private T saveWithoutTransaction(T entity) {
         if (entity.getId() == null)
