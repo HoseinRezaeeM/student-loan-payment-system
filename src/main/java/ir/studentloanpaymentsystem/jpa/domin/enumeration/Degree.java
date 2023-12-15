@@ -5,6 +5,7 @@ public enum Degree {
     Bachelor,
     NoncontiguousBachelor,
     Master,
+    NoncontiguousMaster,
     Doctor,
     ProfessionalDoctor,
     NonContinuousSpecializedDoctor,
