@@ -8,7 +8,7 @@ public class EntityManagerFactoryProvider {
     private static final EntityManagerFactory entityManagerFactory;
 
     static {
-        entityManagerFactory = Persistence.createEntityManagerFactory("defult");
+        entityManagerFactory = Persistence.createEntityManagerFactory("default");
     }
 
     public static EntityManagerFactory getEntityManagerFactory(){
