@@ -56,8 +56,7 @@ public class Installment extends BaseEntity<Integer> {
      public void toShow() {
           System.out.println(" installmentNumber = " + installmentNumber +
                   ", amount = " + amount +
-                  ", dueDate = " + dueDate +
-                  "\n");
+                  ", dueDate = " + dueDate);
      }
 
 
