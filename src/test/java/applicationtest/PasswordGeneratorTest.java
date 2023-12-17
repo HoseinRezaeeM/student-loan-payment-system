@@ -1,4 +1,4 @@
-package logintest;
+package applicationtest;
 
 import ir.studentloanpaymentsystem.jpa.util.PasswordGenerator;
 import org.junit.jupiter.api.Assertions;
