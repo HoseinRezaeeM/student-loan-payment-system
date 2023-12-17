@@ -1,5 +1,5 @@
 <div>
-  <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/blob/master/FHA-Student-Loan-Guideliness-1024x576.png">
+  <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/blob/master/FHA-Student-Loan-Guideliness-1024x576.png" height=""100px>
 </div>
 <div>
   <h1>سامانه پرداخت وام دانشجویی و بازپرداخت آن</h1>
