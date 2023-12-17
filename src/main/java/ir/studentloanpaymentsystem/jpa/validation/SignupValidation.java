@@ -45,13 +45,14 @@ public class SignupValidation {
           return studentNum;
      }
 
-     public static boolean validationBankCardNumber(String studentNumber){
-          Pattern pattern =Pattern.compile("^[0-9]{8}$");
-          return studentNumber.matches(pattern.pattern());
+     public static boolean validationBankCardNumber(String bankCard){
+          Pattern pattern =Pattern.compile("^[0-9]{16}$");
+          return bankCard.matches(pattern.pattern());
      }
 
      public static String validationBankCardNum() {
           String bankCard = null;
+
           boolean isTrue = true;
           while (isTrue) {
 
