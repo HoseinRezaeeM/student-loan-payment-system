@@ -10,11 +10,8 @@ import java.util.Optional;
 
 
 public interface SemesterService extends BaseEntityService<Integer, Semester> {
-     Optional<Semester> findByStudentId(Student student);
+     Optional<Semester> findSemesterByStudentId(Student student);
 
      Integer maxRecordSemsterNumber(Student student);
 
-     Optional<Semester> findByStudentIdForHousingLaon(Student student, Degree degree);
-
-     LocalDate maxRecordEntriesDate(Student student);
 }
