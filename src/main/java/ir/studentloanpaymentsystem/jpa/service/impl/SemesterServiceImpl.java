@@ -17,8 +17,8 @@ public class SemesterServiceImpl  extends BaseEntityServiceImpl<Integer, Semeste
     }
 
     @Override
-    public Optional<Semester> findByStudentId(Student student) {
-        return baseRepository.findByStudentIdForOtherLoan(student);
+    public Optional<Semester> findSemesterByStudentId(Student student) {
+        return baseRepository.findSemesterByStudentId(student);
     }
 
      @Override
@@ -26,14 +26,6 @@ public class SemesterServiceImpl  extends BaseEntityServiceImpl<Integer, Semeste
           return baseRepository.maxRecordSemsterNumber(student);
      }
 
-     @Override
-     public Optional<Semester> findByStudentIdForHousingLaon(Student student, Degree degree) {
-          return baseRepository.findByStudentIdForHousingLaon(student,degree);
-     }
 
-     @Override
-     public LocalDate maxRecordEntriesDate(Student student) {
-          return baseRepository.maxRecordEntriesDate(student);
-     }
 
 }
