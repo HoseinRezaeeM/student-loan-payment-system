@@ -23,7 +23,7 @@ public class SemesterRepositoryImpl extends BaseEntityRepositoryImpl<Integer, Se
      }
 
      @Override
-     public Optional<Semester> findByStudentIdForOtherLoan(Student student) {
+     public Optional<Semester> findSemesterByStudentId(Student student) {
           TypedQuery<Semester> semesterTypedQuery = entityManager
                   .createQuery("SELECT s FROM Semester s WHERE" +
                           " s.student =:student" +
@@ -44,26 +44,6 @@ public class SemesterRepositoryImpl extends BaseEntityRepositoryImpl<Integer, Se
           return max.getSingleResult();
 
      }
-     @Override
-     public Optional<Semester> findByStudentIdForHousingLaon(Student student, Degree degree) {
-          TypedQuery<Semester> semesterTypedQuery = entityManager
-                  .createQuery("SELECT s FROM Semester s WHERE" +
-                                  " s.student =:student" +
-                                  " AND s.entriesYear=(SELECT MAX (s.entriesYear) FROM Semester" +
-                          " s WHERE s.degree=:degree)", Semester.class)
-                  .setParameter("student", student)
-                 // .setParameter("entriesYear",maxRecordEntriesDate(student))
-                  .setParameter("degree",degree)
-                  ;
-          return Optional.ofNullable(semesterTypedQuery.getSingleResult());
-     }
-     @Override
-     public  LocalDate maxRecordEntriesDate(Student student) {
-          Query typedQuery =entityManager
-                  .createQuery("SELECT MAX (s.entriesYear) FROM Semester s" +
-                          " WHERE s.student=:student")
-                  .setParameter("student",student);
-          return (LocalDate) typedQuery.getSingleResult();
-     }
+
 
 }
