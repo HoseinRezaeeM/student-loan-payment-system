@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 
 public class DateApplication {
-    public static final LocalDate DATENOWAPLICATION =LocalDate.of(1402, 12,27);
+    public static final LocalDate DATENOWAPLICATION =LocalDate.of(1402, 11,27);
 
     public static LocalDate addDate(String date) {
         DateTimeFormatter pattern = DateTimeFormatter.ofPattern("yyyy/MM/dd");
