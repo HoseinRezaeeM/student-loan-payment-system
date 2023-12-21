@@ -1,5 +1,5 @@
-<div>
-  <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/blob/master/FHA-Student-Loan-Guideliness-1024x576.png" width="1000" height="300">
+<div align="center">
+  <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/blob/master/FHA-Student-Loan-Guideliness-1024x576.png" width="800" height="300">
 </div>
 <div>
   <h1>پروژه سامانه پرداخت وام دانشجویی و بازپرداخت آن</h1>
@@ -34,15 +34,19 @@
 وام ودیعه مسکن ●
 مبلغ وام ها برای هر یک از مقاطع تحصیلی متفاوت و به شرح جدول زیر است:
 1401- جدول وام تحصیلی دانشجویان 14
-<div>
+<div align="center">
 <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/e73ae8b8-591e-4ce7-b201-cd8fbd8e2647" height="300" weight="200"></div>
 1401- جدول وام ودیعه مسکن دانشجویان 14
-![image](https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/ac83095e-fc97-4e14-8905-020189f52ff9)
+<div align="center">
+  <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/ac83095e-fc97-4e14-8905-020189f52ff9" width="800" height="300">
+
 کلانشهرها: گیلان، اصفهان، آذربایجان شرقی، فارس، خوزستان، قم، خراسان رضوی، البرز،
 افراد مشمول ودیعه مسکن حتماً باید متاهل باشند و ساکن خوابگاه نباشد فقط به یکی از
 زن یا مرد وام ودیعه مسکن تعلق میگیرد.
 ۱۴۰۱ – جدول وام شهریه دانشجویی ۱۴۰۰
-![image](https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/133658a3-9afc-49b4-8ff3-94d714d5847a)
+  <div align="center">
+  <img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/133658a3-9afc-49b4-8ff3-94d714d5847a" width="800" height="300">
+    
 وام شهریه دانشجویی بر اساسمقطع تحصیلی و به دانشجویان شهریه پرداز تعلق میگیرد
 یعنی دانشجویان:
 شبانه ●
