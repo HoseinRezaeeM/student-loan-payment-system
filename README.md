@@ -34,7 +34,8 @@
 وام ودیعه مسکن ●
 مبلغ وام ها برای هر یک از مقاطع تحصیلی متفاوت و به شرح جدول زیر است:
 1401- جدول وام تحصیلی دانشجویان 14
-<img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/e73ae8b8-591e-4ce7-b201-cd8fbd8e2647" height="100">
+<div>
+<img src="https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/e73ae8b8-591e-4ce7-b201-cd8fbd8e2647" height="300" weight="200"></div>
 1401- جدول وام ودیعه مسکن دانشجویان 14
 ![image](https://github.com/HoseinRezaeeM/student-loan-payment-system/assets/143436672/ac83095e-fc97-4e14-8905-020189f52ff9)
 کلانشهرها: گیلان، اصفهان، آذربایجان شرقی، فارس، خوزستان، قم، خراسان رضوی، البرز،
