@@ -5,7 +5,7 @@ import ir.studentloanpaymentsystem.jpa.domin.Loan;
 import ir.studentloanpaymentsystem.jpa.domin.enumeration.Degree;
 import ir.studentloanpaymentsystem.jpa.domin.enumeration.InstallmentStatus;
 import ir.studentloanpaymentsystem.jpa.util.ApplicationContex;
-import ir.studentloanpaymentsystem.jpa.validation.SignupValidation;
+
 
 
 import java.time.LocalDate;
@@ -120,9 +120,9 @@ public class PaymentMenu {
 
      private static void paymentInstallment() {
           while (true) {
-               System.out.println("------------------------------------------");
-               System.out.println("|     Enter your bank card information   |");
-               System.out.println("----------------------------------------\n");
+               System.out.println("-----------------------------------------------------------------");
+               System.out.println("|     Enter your bank card information for Payment Installment  |");
+               System.out.println("---------------------------------------------------------------\n");
                System.out.println("NumberCard:");
                String numberCard = validationBankCardNum();
                System.out.println("CVV2 :");
