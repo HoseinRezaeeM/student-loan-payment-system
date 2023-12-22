@@ -14,6 +14,7 @@ import static ir.studentloanpaymentsystem.jpa.menu.BaseMenu.*;
 import static ir.studentloanpaymentsystem.jpa.menu.PaymentMenu.checkStudentGraduatedForRepaymentInstallment;
 import static ir.studentloanpaymentsystem.jpa.menu.RegisterLoanMenu.*;
 import static ir.studentloanpaymentsystem.jpa.util.DateApplication.DATENOWAPLICATION;
+import static ir.studentloanpaymentsystem.jpa.validation.SignupValidation.validationBankCardNum;
 
 
 public class LoanMenu {
@@ -105,16 +106,16 @@ public class LoanMenu {
 
      private static void saveBankCardInformation() {
           while (true) {
-               System.out.println("-------------------------------------------");
-               System.out.println("|     Enter your bank card information    |");
-               System.out.println("-----------------------------------------\n");
+               System.out.println("---------------------------------------------------");
+               System.out.println("|     Enter your bank card information for save   |");
+               System.out.println("-------------------------------------------------\n");
 
                System.out.println("The cards you register must be in one of the Meli ,Refah ,Tejarat or Maskan banks\n");
                System.out.println("BankName:");
                String bankName = scanner.next();
                BankType bankType = BankType.valueOf(bankName);
                System.out.println("NumberCard:");
-               String numberCard = SignupValidation.validationBankCardNum();
+               String numberCard = validationBankCardNum();
                System.out.println("ExpirationDate:");
                String expirationDate = scanner.next();
                System.out.println("ccv2 :");
