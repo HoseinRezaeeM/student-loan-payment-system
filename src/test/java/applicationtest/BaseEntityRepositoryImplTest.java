@@ -4,9 +4,8 @@ import ir.studentloanpaymentsystem.jpa.domin.Student;
 import ir.studentloanpaymentsystem.jpa.domin.University;
 import ir.studentloanpaymentsystem.jpa.util.ApplicationContex;
 import ir.studentloanpaymentsystem.jpa.util.EntityManagerFactoryProvider;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
 
 import javax.persistence.EntityManager;
 
@@ -14,6 +13,7 @@ import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Optional;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 class BaseEntityRepositoryImplTest {
 
@@ -25,6 +25,8 @@ class BaseEntityRepositoryImplTest {
      }
 
      @Test
+     @Order(1)
+     @DisplayName("Save for each entity")
      void save() {
           Student student =new Student("Ali", "yari", "mohamad","zahra",
                   "0021025","0021025363", LocalDate.now(),"4455245",
@@ -36,6 +38,7 @@ class BaseEntityRepositoryImplTest {
      }
 
      @Test
+     @RepeatedTest(3)
      void update() {
           Student student = new Student();
           Student newStudent =new Student("Ali", "yari", "mohamad","zahra",
