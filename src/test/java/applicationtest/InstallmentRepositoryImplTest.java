@@ -7,6 +7,7 @@ import ir.studentloanpaymentsystem.jpa.domin.Student;
 import ir.studentloanpaymentsystem.jpa.domin.enumeration.InstallmentStatus;
 import ir.studentloanpaymentsystem.jpa.util.ApplicationContex;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -17,6 +18,7 @@ class InstallmentRepositoryImplTest {
 
 
      @Test
+     @DisplayName("UnPaid Installment")
      void findUnPaidInstallment() {
           final List<Installment> unPaidInstallment = ApplicationContex.getInstallmentServiceImpl()
                   .findUnPaidInstallment(new Student(15), new Loan(4103),InstallmentStatus.UnPaid);
