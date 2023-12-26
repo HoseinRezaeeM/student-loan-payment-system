@@ -28,13 +28,15 @@ public class BankCardRepositoryImpl extends BaseEntityRepositoryImpl<Integer, Ba
     }
 
     @Override
-    public boolean existBanCardByNumberCardAndCcvAndExpirationDate(String numberCard, String cvv, String expirationDate) {
+    public boolean existBanCardByNumberCardAndCcvAndExpirationDate(Student student,String numberCard, String cvv, String expirationDate) {
         TypedQuery<Long> typedQuery = entityManager
                 .createQuery("SELECT COUNT (b) FROM BankCard b" +
-                        " WHERE b.numberCard =: numberCard AND b.cvv2 =:cvv2 AND b.expirationDate =: expirationDate", Long.class)
+                        " WHERE b.numberCard =: numberCard AND b.cvv2 =:cvv2 AND b.expirationDate =: expirationDate " +
+                       "AND b.student =: student", Long.class)
                 .setParameter("numberCard", numberCard)
                 .setParameter("cvv2",cvv)
-                .setParameter("expirationDate",expirationDate);
+                .setParameter("expirationDate",expirationDate)
+               .setParameter("student",student);
         return typedQuery.getSingleResult() > 0;
     }
 
