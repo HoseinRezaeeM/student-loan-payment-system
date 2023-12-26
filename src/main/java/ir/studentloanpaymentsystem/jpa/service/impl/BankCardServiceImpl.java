@@ -17,8 +17,8 @@ public class BankCardServiceImpl extends BaseEntityServiceImpl<Integer, BankCard
     }
 
     @Override
-    public boolean existBanCardByNumberCardAndCcvAndExpirationDate(String numberCard, String cvv, String expirationDate) {
-        return baseRepository.existBanCardByNumberCardAndCcvAndExpirationDate(numberCard,cvv,expirationDate);
+    public boolean existBanCardByNumberCardAndCcvAndExpirationDate(Student student,String numberCard, String cvv, String expirationDate) {
+        return baseRepository.existBanCardByNumberCardAndCcvAndExpirationDate(student,numberCard,cvv,expirationDate);
     }
 
     @Override
