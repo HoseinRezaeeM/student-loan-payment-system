@@ -8,7 +8,7 @@ public interface BankCardRepository extends BaseEntityRepository<Integer, BankCa
 
     boolean existsByNumberCard(String numberCard);
 
-    boolean existBanCardByNumberCardAndCcvAndExpirationDate(String numberCard,String cvv,String expirationDate);
+    boolean existBanCardByNumberCardAndCcvAndExpirationDate(Student student,String numberCard,String cvv,String expirationDate);
 
     boolean hasBankCardForStudent(Student student);
 }
