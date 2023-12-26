@@ -13,5 +13,4 @@ public class DateApplication {
         DateTimeFormatter pattern = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         return LocalDate.parse(date, pattern);
     }
-
 }

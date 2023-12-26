@@ -130,7 +130,7 @@ public class PaymentMenu {
                System.out.println("ExpirationDate");
                String expirationData = scanner.next();
                boolean card = ApplicationContex.getBankCardServiceImpl()
-                       .existBanCardByNumberCardAndCcvAndExpirationDate(numberCard, cvv2, expirationData);
+                       .existBanCardByNumberCardAndCcvAndExpirationDate(studentEntity,numberCard, cvv2, expirationData);
                if (card) {
                     System.out.println("Installment Id:");
                     int inatallmentId = scanner.nextInt();
