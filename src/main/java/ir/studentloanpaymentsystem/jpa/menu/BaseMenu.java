@@ -85,7 +85,7 @@ public class BaseMenu {
 
                final Optional<Student> nextSignup = ApplicationContex
                        .getStudentServiceImpl()
-                                           .showUsernameAndPasswodForStudentNextSignup(newStudent.getUsername());
+                      .showUsernameAndPasswodForStudentNextSignup(newStudent.getUsername());
 
                System.out.println("Username : " + nextSignup.get().getUsername() + "  Password : " + nextSignup.get().getPassword());
 
