@@ -69,5 +69,14 @@ public class Student extends BaseEntity<Integer> {
     public Student(Integer id) {
         super(id);
     }
+
+      public Student(Integer integer, String firstname) {
+            super(integer);
+            this.firstname = firstname;
+      }
+
+      public Student(String firstname) {
+            this.firstname = firstname;
+      }
 }
 
